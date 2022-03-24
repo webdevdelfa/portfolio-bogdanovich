@@ -35,8 +35,14 @@ h3 {
 }
 
 .wrapper {
-    min-height: 100%;
+    min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
 }
 
 .container {
@@ -54,6 +60,12 @@ h3 {
     display: flex;
     justify-content: flex-end;
 }
+
+.nav__item {
+    margin-left: 33px;
+}
+
+.nav__link {}
 
 .header__burger {
     width: 30px;
@@ -267,19 +279,49 @@ h3 {
     }
 }
 
+.footer {
+    padding: 51px 0px 54px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+}
+
 .social__item {
     width: 30px;
     height: 30px;
+    margin-right: 35px;
+}
+
+.social__item:last-child {
+    margin-right: 0;
 }
 
 .social__link {
     display: block;
     width: 100%;
     height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.fb {
-    background-image: url(../img/icons/fb.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.vk {
+    background-image: url(../img/icons/vk.png);
+}
+
+.telegram {
+    background-image: url(../img/icons/telegram.png);
+}
+
+.github {
+    background-image: url(../img/icons/github.png);
+}
+
+.in {
+    background-image: url(../img/icons/Linkedin.png);
 }
