@@ -51,6 +51,13 @@ h3 {
     padding: 0 5px;
 }
 
+.title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.36;
+    color: #21243D;
+}
+
 .header {
     padding: 30px 0px;
 }
@@ -285,7 +292,9 @@ h3 {
 
 .footer__container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .social {
@@ -295,18 +304,20 @@ h3 {
 .social__item {
     width: 30px;
     height: 30px;
+    overflow: hidden;
     margin-right: 35px;
 }
 
 .social__item:last-child {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .social__link {
     display: block;
     width: 100%;
     height: 100%;
-    background-size: contain;
+    font-size: 0;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -314,14 +325,14 @@ h3 {
     background-image: url(../img/icons/vk.png);
 }
 
-.telegram {
-    background-image: url(../img/icons/telegram.png);
+.ok {
+    background-image: url(../img/icons/ok.png);
 }
 
 .github {
     background-image: url(../img/icons/github.png);
 }
 
-.in {
-    background-image: url(../img/icons/Linkedin.png);
+.telegram {
+    background-image: url(../img/icons/telegram.png);
 }
